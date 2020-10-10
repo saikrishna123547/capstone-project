@@ -1,0 +1,11 @@
+<div class="container">
+    <h3><u>Enter product id to remove that product from DB</u></h3>
+    <input class="form-control"  type="text" [(ngModel)]="product.id"  placeholder="Enter product id"/>
+  
+    <button class="btn btn-primary" type="button" (click)="deleteProduct(product.id)">Delete Product</button>
+
+</div>
+
+<small class="btn btn-info float-right"  [routerLink]="['/loginsuccess']">click here for admin page</small>
+
+

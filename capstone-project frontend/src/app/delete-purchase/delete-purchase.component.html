@@ -1,0 +1,14 @@
+<div class="container">
+    <h3><u>Enter purchase id to remove that purchase from DB</u></h3>
+    <input class="form-control"  type="text" [(ngModel)]="purchase.id"  placeholder="Enter purchase id"/>
+   
+    <button class="btn btn-primary" type="button" (click)="deletePurchase(purchase.id)">Delete Purchase</button>
+
+</div>
+
+<small class="btn btn-info float-right"  [routerLink]="['/loginsuccess']">click here for admin page</small>
+
+
+
+
+
